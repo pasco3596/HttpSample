@@ -1,20 +1,14 @@
 package jp.ac.hal.httpsample;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by pasuco on 2016/07/17.
- */
 public class ShopArrayAdapter extends ArrayAdapter<Shop> {
     private int resourceId;
     private List<Shop> shop;

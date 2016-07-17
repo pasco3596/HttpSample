@@ -1,24 +1,9 @@
 package jp.ac.hal.httpsample;
 
 import android.os.AsyncTask;
-import android.util.Log;
-import android.widget.Toast;
-
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -84,7 +69,7 @@ public class AsyncJsonLoader extends AsyncTask<String, Integer, JSONObject> {
             con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("GET");
 
-            ////////////////////////////////////////setいるのかよくわからない
+            ///////////setいるのかよくわからない
             con.setInstanceFollowRedirects(false);
             con.setRequestProperty("Accept-Language", "jp");
             con.setDoInput(true);
